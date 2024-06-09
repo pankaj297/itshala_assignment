@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header .logo {
+    height: 50px;
+   padding-top: 1rem;
+   
+}
+
+
+body{
+    overflow-x: hidden;
+}
+.header{
+    padding: 0 4.8rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+    /* background-color: rgba(0,0,0, 0, .1); */
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+    gap: 3.8rem;
+    list-style: none;
+    
+}
+
+
+.nav-link:link,
+.nav-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 2rem;
+    font-weight: 500;
+    color: black;
+    
+    /* background-color: pink; */
+    transition: all 0.3s;
+
+}
+
+.nav-link:hover,
+.nav-link:active{
+    color: rgb(47, 222, 59);
+}
+
+.mobile-nav-btn{
+    display: none;
+    background-color: transparent;
+    /* background-color: pink; */
+    cursor: pointer;
+    
+}
+
+.mobile-nav-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+  
+}
+
+.mobile-nav-icon[name="close-btn"]{
+    display: none;
+    
+}
+
+
+
+/* ========================================
+ Hero and services Section Start
+======================================== */
+
+
+
+.headingh1{
+    animation-name: trip;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        /* animation-delay: 2s; */
+        animation-iteration-count: 10;
+}
+
+/* @keyframes trip {
+  from {
+    translate: -30%;
+  }
+  to {
+translate: 90vw;
+translate: calc(80vw - 100px);
+  }
+} */
+
+@keyframes trip {
+    0% {
+        color: #405DE6;
+        /* transform: translateX(200px, 0%); */
+    }
+
+    25% {
+         color: #5851DB;
+        /* transform: translateX(calc(45vw - 10%)); */
+    }
+
+    50% {
+        color: #833AB4;
+        /* transform: translateX(calc(45vw - 10%), 500px); */
+    }
+
+    75% {
+        color: #C13584;
+        /* transform: translateX(20%, 500px); */
+    }
+
+    100% {
+        color: #FD1D1D;
+        /* transform: translateX(20%, 0%); */
+    }
+}
+
+ .section-hero {
+     background-color: bisque;
+     height: 60vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.section-hero .hero h1{
+    font-size: 40px;
+    color: blue;
+  
+}
+
+p{
+    color: rgb(77, 71, 71);
+}
+
+.hero .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.btn{
+   
+    background-color: transparent;
+    border: 1px solid black;
+        display: inline-block;
+        padding: 10px 12px;
+        text-transform: capitalize;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 20px;
+         color: black;
+    }
+    
+.btn1:hover{
+    background-color: black;
+    color: white;
+    scale: 0.9;
+}
+
+.btn2:hover {
+    background-color: skyblue;
+    color: white;
+    scale: 0.9;
+}
+
+.btn{
+    transition: scale 1s linear;
+}
+
+.section-services{
+    background-color: white;
+        height: 60vh;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+}
+
+.hero2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 50%;
+    row-gap: 30px;
+        column-gap: 30px;
+        align-items: center;
+           
+            align-items: stretch;
+        
+          
+            justify-items: center;
+         
+            justify-items: stretch;
+
+}
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 30px 30px;
+}
+
+
+.image-section img{
+    width: 110px;
+    height: 110px;
+}
+
+
+
+
+
+/* ========================================
+ Responsives codes
+======================================== */
+
+@media(max-width: 600px){
+    .mobile-nav-btn{
+        display: block; 
+        z-index: 999;
+        border: 3px;
+        
+    }
+    .header{
+        position: relative;
+    }
+        .nav-link:link,
+        .nav-link:visited{
+            color: white;
+            font-weight: 900;
+            
+        }
+/* .mobile-nav-icon{
+    color: white;
+} */
+               
+    .navbar{
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        /* background-color: silver; */
+        background-image: url(image/img3.jpg);
+        background-repeat: no-repeat;
+        Background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        
+
+        opacity: 1;
+        visibility: hidden;
+    }
+
+
+    
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+       
+    }
+
+    .active .mobile-nav-btn .mobile-nav-icon[name="close-btn"]{
+        display: block;
+        
+    }
+
+        .active .mobile-nav-btn .mobile-nav-icon[name="open-btn"] {
+            display: none;
+        }
+
+
+        .section-hero .hero h1 {
+            font-size: 30px;
+          
+        }
+                .btn {
+                padding: 6px 9px;
+                    font-size: 10px;
+                
+                }
+}
+
+
+@media(max-width: 400px) {
+    .header{
+        padding: 0 2.2rem;
+    }
+    .header .logo{
+        width: 20%;
+    }
+}
+
+
+
+
+/* ==============================
+  Form Css code
+============================= */
+
+body {
+    background-color: rgb(210, 225, 228);
+    background-color: rgba(0, 0, 0, 0, .1);
+   
+}
+
+.heading{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.customPadding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blanchedalmond; */
+    margin: 3%;
+    padding-top: 2rem;
+   
+}
+
+
+.card-img {
+    width: 150px;
+}
+
+.authForm {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .authForm {
+        width: 80%;
+    }
+
+    .customPadding {
+        margin: 3%;
+    }
+}
+
+form .formInputs {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.formInputs input {
+    padding: 0.6rem 0.6rem;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+
+
+.authForm form button {
+    position: relative;
+    float: right;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid orange;
+    color: orange;
+    font-weight: 800;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.authForm form button a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+}
+
+.authForm form button:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+
+
+
