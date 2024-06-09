@@ -257,7 +257,7 @@ p{
     .navbar{
         /* display: none; */
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         /* background-color: silver; */
         background-image: url(image/img3.jpg);
         background-repeat: no-repeat;
@@ -305,6 +305,9 @@ p{
 
         .section-hero .hero h1 {
             font-size: 30px;
+            /* justify-content: center; */
+            align-items: center;
+            margin-left: 3px;
           
         }
                 .btn {
